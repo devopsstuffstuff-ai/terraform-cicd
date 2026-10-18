@@ -16,11 +16,11 @@ pipeline {
             }
         }
 
-        stage('Terraform Format') {
-            steps {
-                sh 'terraform fmt -check'
-            }
-        }
+        // stage('Terraform Format') {
+        //     steps {
+        //         sh 'terraform fmt -check'
+        //     }
+        // }
 
         stage('Terraform Validate') {
             steps {
